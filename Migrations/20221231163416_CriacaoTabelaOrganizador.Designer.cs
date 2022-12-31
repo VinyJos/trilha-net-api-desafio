@@ -12,7 +12,7 @@ using TrilhaApiDesafio.Context;
 namespace TrilhaApiDesafio.Migrations
 {
     [DbContext(typeof(OrganizadorContext))]
-    [Migration("20221229161622_CriacaoTabelaOrganizador")]
+    [Migration("20221231163416_CriacaoTabelaOrganizador")]
     partial class CriacaoTabelaOrganizador
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

@@ -93,7 +93,7 @@ namespace TrilhaApiDesafio.Controllers
             // TODO: Atualizar a variável tarefaBanco no EF e salvar as mudanças (save changes)
             _context.Tarefas.Update(tarefaBanco);
             _context.SaveChanges();
-            return Ok();
+            return Ok(tarefaBanco);
         }
 
         [HttpDelete("{id}")]
@@ -106,6 +106,7 @@ namespace TrilhaApiDesafio.Controllers
 
             // TODO: Remover a tarefa encontrada através do EF e salvar as mudanças (save changes)
             _context.Tarefas.Remove(tarefaBanco);
+            _context.SaveChanges();
             return NoContent();
         }
     }
